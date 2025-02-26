@@ -1,13 +1,83 @@
 <!DOCTYPE html>
-<head> 
-
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danh sách không thứ tự</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin-left :35%
+        }
+        h2 {
+            font-size: 24px;
+        }
+        ul {
+            padding-left: 20px; /* Thụt lề vào trong */
+        }
+        .chapter {
+            font-weight: normal; /* Không in đậm */
+            list-style-type: none; /* Xóa dấu mặc định */
+            margin-top: 10px;
+        }
+        .chapter1 {
+            list-style-type: disc; /* Dấu chấm tròn đen */
+        }
+        .chapter2 {
+            list-style-type: circle; /* Dấu tròn rỗng */
+        }
+        .chapter3,
+        .chapter4 {
+            list-style-type: square; /* Dấu chấm vuông đen */
+        }
+    </style>
 </head>
-<body style="text-align:center">
-    <h1>Bài 3.1: Danh sách không thứ tự</h1>
-    <ul>
-        <li>Chương 1:Tổng quan về Internet và dịch vụ WEB</li>
-        
-        
-    </ul>
+<body>
+
+<h2>Bài 3.1: Danh sách không thứ tự</h2>
+
+<ul>
+    <li class="chapter">Chương 1: Tổng quan về Internet và dịch vụ WEB
+        <ul class="chapter1">
+            <li>Internet</li>
+            <li>Môi trường tạo Web</li>
+            <li>Internet protocol</li>
+            <li>Web page, Website</li>
+            <li>Trang Web động, Web tĩnh</li>
+            <li>Các công cụ tạo Web cơ bản (FrontPage, IIS, PHP, ...)</li>
+        </ul>
+    </li>
+
+    <li class="chapter">Chương 2: Tạo Website
+        <ul class="chapter2">
+            <li>Qui trình tạo lập Website</li>
+            <li>Các mô hình tổ chức Website</li>
+            <li>Tạo Website mẫu (Web template)</li>
+            <li>Tạo trang Web mẫu (Web Page Template)</li>
+        </ul>
+    </li>
+
+    <li class="chapter">Chương 3: Tổng quan về HTML5
+        <ul class="chapter3">
+            <li>Định nghĩa HTML5</li>
+            <li>Tổng quan về cú pháp HTML5</li>
+        </ul>
+    </li>
+
+    <li class="chapter">Chương 4: Làm việc với HTML5
+        <ul class="chapter4">
+            <li>Các phần tử HTML cơ bản</li>
+            <li>Định dạng văn bản</li>
+            <li>Các thẻ đa phương tiện</li>
+            <li>Trích dẫn</li>
+            <li>Danh sách (List)</li>
+            <li>Bảng (Table)</li>
+            <li>Các phần tử nội dung mới trong HTML5</li>
+            <li>Làm việc với biểu mẫu (Form)</li>
+            <li>Làm việc với HTML5 Audio-Video</li>
+        </ul>
+    </li>
+</ul>
 
 </body>
+</html>
