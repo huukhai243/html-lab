@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng ký tham gia</title>
+    <style>
+        table {
+            width: 50%;
+            border-collapse: collapse;
+            margin: auto;
+        }
+        th {
+            background-color: #FC6;
+            text-align: left;
+            padding: 5px;
+        }
+        td {
+            padding: 8px;
+        }
+        .label {
+            color: red;
+        }
+        input, select {
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+
+    <form>
+        <table border="1">
+            <tr>
+                <th colspan="2">Thông tin đăng nhập</th>
+            </tr>
+            <tr>
+                <td class="label">Chọn tên đăng nhập</td>
+                <td><input type="text" placeholder="vd:hoaithu"></td>
+            </tr>
+            <tr>
+                <td class="label">Mật khẩu</td>
+                <td><input type="password"> <small>(ít nhất 6 ký tự)</small></td>
+            </tr>
+            <tr>
+                <td class="label">Nhập lại mật khẩu</td>
+                <td><input type="password"></td>
+            </tr>
+            <tr>
+                <td class="label">Ảnh avatar (nếu có)</td>
+                <td><input type="file"> <small>(ảnh gif hoặc jpg)</small></td>
+            </tr>
+            
+            <tr>
+                <th colspan="2">Thông tin cá nhân</th>
+            </tr>
+            <tr>
+                <td>Họ và tên</td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>Địa chỉ email</td>
+                <td><input type="email"></td>
+            </tr>
+            <tr>
+                <td>Giới tính</td>
+                <td>
+                    <input type="radio" name="gender" value="Nam"> Nam
+                    <input type="radio" name="gender" value="Nữ"> Nữ
+                </td>
+            </tr>
+            <tr>
+                <td>Ngày sinh</td>
+                <td>
+                    Ngày <input type="number" min="1" max="31" style="width: 50px;">
+                    Tháng <input type="number" min="1" max="12" style="width: 50px;">
+                    Năm <input type="number" min="1900" max="2024" style="width: 80px;">
+                </td>
+            </tr>
+            <tr>
+                <td>Nơi ở</td>
+                <td>
+                    <select>
+                        <option>Chọn tỉnh</option>
+                        <option>Hà Nội</option>
+                        <option>TP. Hồ Chí Minh</option>
+                        <option>Đà Nẵng</option>
+                        <option>Huế</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" style="text-align: center;">
+                    <button type="submit">Đăng ký tham gia</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+
+</body>
+</html>

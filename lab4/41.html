@@ -1,7 +1,121 @@
-<!DOCTYPE html >
-<html></html>
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng ký thông tin</title>
+    <style>
+        /* Nền tổng thể */
+        body {
+            background-color: #f0f0f0; /* Nền xám nhạt */
+            font-family: Arial, sans-serif;
+        }
+
+        /* Khung chứa form */
+        .container {
+            width: 50%; /* Giới hạn chiều rộng */
+            margin: 50px auto; /* Căn giữa */
+            background-color: #ffffff; /* Nền trắng */
+            padding: 20px;
+            border-radius: 10px; /* Bo góc */
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* Hiệu ứng bóng */
+            background-color:#996600;
+            color: #003300;
+        }
+
+        /* Bảng thông tin */
+        table {
+            width: 100%;
+            color: #333; /* Chữ màu tối hơn để dễ nhìn */
+        }
+
+        /* Ẩn input file mặc định */
+        .custom-file-input {
+            display: none;
+        }
+
+        /* Thiết kế lại nút "Duyệt" */
+        .custom-file-label {
+            display: inline-block;
+            padding: 5px 10px;
+            background-color: #ddd;
+            border: 1px solid #666;
+            cursor: pointer;
+        }
+
+        /* Căn giữa nút "Đồng ý" */
+        .submit-btn {
+            text-align: center;
+        }
+    </style>
+</head>
 <body>
-    <table>
-        Đăng ký thông tin
-    </table>
+
+    <div class="container">
+        <form>
+            <table border="0" cellpadding="5" cellspacing="5">
+                <tr>
+                    <th colspan="2" style="text-align: center; font-size: 18px;">Đăng ký thông tin</th>
+                </tr>
+                <tr>
+                    <td>Họ và tên</td>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td>Địa chỉ</td>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td>Điện thoại</td>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td>Giới tính</td>
+                    <td>
+                        <input type="radio" name="gender" value="Nam"> Nam
+                        <input type="radio" name="gender" value="Nữ"> Nữ
+                    </td>
+                </tr>
+                <tr>
+                    <td>Tên Tài Khoản</td>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td>Mật Khẩu</td>
+                    <td><input type="password"></td>
+                </tr>
+                <tr>
+                    <td>Nhập lại Mật Khẩu</td>
+                    <td><input type="password"></td>
+                </tr>
+                <tr>
+                    <td>Ghi chú thêm</td>
+                    <td><textarea rows="3" cols="20"></textarea></td>
+                </tr>
+                <tr>
+                    <td>Ảnh Avanta</td>
+                    <td>
+                        <label for="file-upload" class="custom-file-label">Duyệt</label>
+                        <input type="file" id="file-upload" class="custom-file-input">
+                        Chưa chọn tập tin.
+                    </td>
+                </tr>
+                <tr>
+                    <td>Sở thích</td>
+                    <td>
+                        <input type="checkbox" value="Thể thao"> Thể thao<br>
+                        <input type="checkbox" value="Âm nhạc"> Âm nhạc<br>
+                        <input type="checkbox" value="Game"> Game
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="submit-btn">
+                        <button type="submit">Đồng ý</button>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+
 </body>
+</html>
