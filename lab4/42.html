@@ -3,31 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Đăng ký tham gia</title>
+    <title>Form Đăng Ký</title>
     <style>
         table {
-            width: 50%;
+            width: 60%;
             border-collapse: collapse;
-            margin: auto;
+            margin: 20px auto;
         }
         th {
             background-color: #FC6;
             text-align: left;
-            padding: 5px;
+            padding: 10px;
         }
         td {
-            padding: 8px;
+            padding: 10px;
+        }
+        input, select {
+            width: 100%;
+            padding: 5px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .submit-btn {
+            background-color: #007BFF;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            cursor: pointer;
+            border-radius: 4px;
+            display: block;
+            margin: 10px auto;
         }
         .label {
             color: red;
-        }
-        input, select {
-            width: 200px;
+            font-weight: bold;
         }
     </style>
 </head>
 <body>
-
     <form>
         <table border="1">
             <tr>
@@ -35,31 +49,30 @@
             </tr>
             <tr>
                 <td class="label">Chọn tên đăng nhập</td>
-                <td><input type="text" placeholder="vd:hoaithu"></td>
+                <td><input type="text" name="username"> vd:hoaithu</td>
             </tr>
             <tr>
                 <td class="label">Mật khẩu</td>
-                <td><input type="password"> <small>(ít nhất 6 ký tự)</small></td>
+                <td><input type="password" name="password"> (ít nhất 6 ký tự)</td>
             </tr>
             <tr>
                 <td class="label">Nhập lại mật khẩu</td>
-                <td><input type="password"></td>
+                <td><input type="password" name="confirm_password"></td>
             </tr>
             <tr>
                 <td class="label">Ảnh avatar (nếu có)</td>
-                <td><input type="file"> <small>(ảnh gif hoặc jpg)</small></td>
+                <td><input type="file" name="avatar" accept="image/gif, image/jpeg"></td>
             </tr>
-            
             <tr>
                 <th colspan="2">Thông tin cá nhân</th>
             </tr>
             <tr>
                 <td>Họ và tên</td>
-                <td><input type="text"></td>
+                <td><input type="text" name="fullname"></td>
             </tr>
             <tr>
                 <td>Địa chỉ email</td>
-                <td><input type="email"></td>
+                <td><input type="email" name="email"></td>
             </tr>
             <tr>
                 <td>Giới tính</td>
@@ -71,30 +84,28 @@
             <tr>
                 <td>Ngày sinh</td>
                 <td>
-                    Ngày <input type="number" min="1" max="31" style="width: 50px;">
-                    Tháng <input type="number" min="1" max="12" style="width: 50px;">
-                    Năm <input type="number" min="1900" max="2024" style="width: 80px;">
+                    Ngày <input type="number" name="day" min="1" max="31" style="width: 50px;">
+                    Tháng <input type="number" name="month" min="1" max="12" style="width: 50px;">
+                    Năm <input type="number" name="year" min="1900" max="2100" style="width: 80px;">
                 </td>
             </tr>
             <tr>
                 <td>Nơi ở</td>
                 <td>
-                    <select>
-                        <option>Chọn tỉnh</option>
-                        <option>Hà Nội</option>
-                        <option>TP. Hồ Chí Minh</option>
-                        <option>Đà Nẵng</option>
-                        <option>Huế</option>
+                    <select name="location">
+                        <option value="">Chọn tỉnh</option>
+                        <option value="hanoi">Hà Nội</option>
+                        <option value="hochiminh">Hồ Chí Minh</option>
+                        <option value="danang">Đà Nẵng</option>
                     </select>
                 </td>
             </tr>
             <tr>
                 <td colspan="2" style="text-align: center;">
-                    <button type="submit">Đăng ký tham gia</button>
+                    <button type="submit" class="submit-btn">Đăng ký tham gia</button>
                 </td>
             </tr>
         </table>
     </form>
-
 </body>
 </html>
