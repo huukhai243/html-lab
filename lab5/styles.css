@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    margin: 40px;
+}
+
+.box {
+    display: flex;
+    width: 100%;
+}
+.left {
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: space-between;
+    height: 85vh;
+}
+
+.left .top {
+    margin-top: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.right {
+    background-color: #CC9933;
+    height: 85vh;
+    justify-content: space-between;
+    display: flex;
+    width: 600px;
+}
+
+.right-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    width: 50%;
+}
+
+.right-left .content {
+    padding-left: 16px;
+}
+
+.right-left p {
+    margin-top: 16px;
+    font-weight: bold;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.right-left span {
+    font-size: 40px;
+}
+
+.right-left .bottom img {
+    width: 200px;
+}
+
+.right-right {
+    width: 50%;
+    gap: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    padding-right: 8px;
+}
+
+.right-right .coffee_online {
+    width: 250px;
+    height: 100px;
+}
+
+.right-right .cup {
+    width: 220px;
+    margin-right: 30px;
+}
+
+
+/* ------story------ */
+
+.story.right {
+    height: fit-content;
+}
+
+.story.right-left {
+    background-color: #CCCC99;
+    flex: 1;
+}
+
+.story.right-left p {
+    font-weight: normal;
+}
+
+.story.right-left h2 {
+    margin-top: 20px;
+    color: #999966;
+}
+
+.story.right-right {
+    background-color: #999966;
+    width: 100px;
+}
+
+.navigate {
+    display: flex;
+    justify-content: end;
+    margin: 40px 0 60px;
+    padding-right: 2px;
+}
+
+
+/* register */
+
+.register .right-right {
+    align-items: start;
+    margin-top: 40px;
+}
+
+.form, .register .right-right {
+    color: #006666;
+}
+
+.form p {
+    font-weight: normal;
+}
+
+
+.register .right-right input[type="text"], 
+.register .right-right textarea {
+    width: 250px;
+}
+.register .right-right input.phone {
+    width: 150px;
+}
+
+.register button {
+    padding: 2px 4px;
+}
