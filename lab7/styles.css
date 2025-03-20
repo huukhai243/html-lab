@@ -1,0 +1,255 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
+}
+
+header .banner {
+    width: 100%;
+    display: flex;
+}
+
+header .banner img {
+    width: 25%;
+}
+
+header .menu {
+    display: flex;
+    border: 1px solid #333;
+    background-color: #0033FF;
+}
+
+header .menu--item {
+    padding: 4px 8px;
+    border-right: 1px solid #333;
+    color: #fff;
+    text-decoration: none;
+}
+
+header .menu--item:hover {
+    color: #FF0;
+    text-decoration: underline;
+}
+
+header .menu--item:active {
+    color: #F0F;
+}
+
+main {
+    width: 100%;
+    display: flex;
+}
+
+aside {
+    background-color: #0099FF;
+    width: 200px;
+    padding: 6px;
+}
+
+aside .menu {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 24px;
+    border-bottom: 3px solid #fff;
+}
+
+aside .menu img:hover {
+    filter: grayscale(100%);
+}
+
+aside .banner {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+aside .banner hr {
+    height: 2px;
+    width: 100%;
+    background-color: #fff;
+    margin-bottom: 4px;
+    margin-top: 2px;
+}
+
+main .content {
+    flex: 1;
+}
+
+.content .banner {
+    width: 100%;
+    display: flex;
+}
+
+.content .banner img {
+    flex: 1;
+}
+
+h1 {
+    margin: 16px 0;
+    text-transform: uppercase;
+    padding: 0 8px;
+}
+
+.stories {
+    padding: 0 16px;
+}
+
+.stories .story-item {
+    display: flex;
+    margin-bottom: 24px;
+    width: 100%;
+    gap: 16px;
+}
+
+.stories .story-item .story-item--text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 12px;
+    width: 400px;
+}
+
+.dich-vu {
+    padding: 0 24px;
+}
+
+.dich-vu h1 {
+    text-transform: none;
+    border-bottom: 2px dotted #333 ;
+    padding: 0;
+    margin-top: 0;
+    height: fit-content;
+}
+
+.dich-vu h1 a {
+    color: #4A8E94;
+    text-decoration: none;
+}
+
+.dich-vu h1 .ca-nhan {
+    position: relative;
+    margin-right: 8px;
+}
+
+.dich-vu h1 .ca-nhan::before,
+.dich-vu h1 .ca-nhan::after {
+    content: '';
+    background-color: #4A8E94;
+    height: 6px;
+    display: block;
+    width: 2px;
+    position: absolute;
+    right: -8px;
+}
+
+.dich-vu h1 .ca-nhan::before {
+    top: 6px;
+}
+.dich-vu h1 .ca-nhan::after {
+    bottom: 6px;
+}
+
+.dich-vu p {
+    width: 500px;
+    margin: 24px 0;
+}
+
+.services {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 400px;
+}
+
+.service-item {
+    display: flex;
+    gap: 2px;
+    margin-top: 24px;
+}
+
+.service-item-text {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+
+.service-item-text a {
+    text-decoration: none;
+    color: #4A8E94;
+}
+
+.services.doanh-nghiep {
+    flex-direction: row-reverse;
+    width: 500px;
+}
+
+.services.doanh-nghiep .service-item {
+    width: 50%;
+}
+
+.services.doanh-nghiep .service-item .service-item-text {
+    justify-content: end;
+}
+
+
+.register {
+    padding: 24px 48px 24px 16px;
+}
+
+.register h1 {
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    background-color: #009AFD;
+    margin-top: 12px;
+}
+
+.register .form .field {
+    display: flex;
+    margin-top: 8px;
+}
+
+.register .form .field .label {
+    width: 200px;
+}
+
+.register .form .field input,
+.register .form .field select {
+    display: block;
+    border: 1px solid;
+}
+
+.register .form .field input.long {
+    width: 300px;
+}
+
+.register .form .field .checkbox {
+    margin-left: 24px;
+    display: flex;
+}
+
+.register .form .field p {
+    font-style: italic;
+}
+
+textarea {
+    width: 100%;
+    border: 1px solid;
+    border-radius: 5px;
+    margin-top: 8px;
+} 
+
+.buttons {
+    display: flex;
+    justify-content: end;
+    gap: 12px;
+}
+
+button {
+    padding: 6px 8px;
+    border: 1px solid;
+    border-radius: 5px;
+}

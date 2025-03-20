@@ -1,0 +1,68 @@
+td {
+    width: fit-content;
+    border-spacing: 0;
+    border-collapse: unset;
+    padding: 0;
+}
+
+td.none {
+    width: 74px;
+}
+
+td.color {
+    background-color: #F0F0F0;
+}
+
+tr {
+    display: flex;
+}
+
+td.hr {
+    width: calc(74px * 5);
+}
+
+td.hr hr {
+    height: 2px;
+    background-color: #f20904;
+    margin: 0;
+}
+
+td.form {
+    width: calc(74px *6);
+}
+
+h1 {
+    text-align: center;
+}
+
+.field {
+    display: flex;
+    gap: 8px;
+    margin-top: 8px;
+}
+
+.control {
+    width: 90%;
+}
+
+.label {
+    width: 120px;
+    display: flex;
+    justify-content: end;
+}
+
+input[type="text"] {
+    width: 200px;
+}
+
+input.long {
+    width: 300px;
+}
+
+input.small {
+    width: 100px;
+}
+
+textarea {
+    width: 90%;
+}
