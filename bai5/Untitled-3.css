@@ -1,0 +1,12 @@
+@charset "utf-8";
+/* CSS Document */
+
+.main{width:700px; margin:auto; }
+.banner{width:700px ; height:60px; background-color:#D41C1F }
+.menu{width:150px ; height:600px; float:left; }
+.rong1{width:10px;height:600px;float:left;background-color:orange}
+.content{width:310px ; height:600px; float:left;background-color:orange ;font-size:18px;text-align:left}
+.rong{width:30px;height:600px;float:left;background-color:orange}
+.ads{width:200px ; height:600px; float:left ; background-color:orange}
+.footer_left{width:150px ; height:150; float:left}
+.footer_right{width:550px ; height:190px; float:left;padding-top:60px; background-color:orange}

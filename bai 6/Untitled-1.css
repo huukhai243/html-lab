@@ -1,0 +1,10 @@
+@charset "utf-8";
+/* CSS Document */
+
+.main{width:778px; margin:auto; }
+.menu{width:778px ; height:55px; background-color:#D00C0F }
+.rong{width:15px ; height:685px;float:left; }
+.content{width:563px ; height:685px;float:left; }
+.banner{width:200px ; height:685px;float:left; background-color:#157BD9 }
+.footerone{width:200px;height:15px;float:left; background-color:#157BD9}
+.footer { width:778px ; height:20px ; float:left;background-color:#050FBC}

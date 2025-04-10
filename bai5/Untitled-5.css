@@ -1,0 +1,10 @@
+@charset "utf-8";
+/* CSS Document */
+
+.main{width:700px; margin:auto; }
+.banner{width:700px ; height:60px; }
+.menu{width:150px ; height:800px; float:left; }
+.content{width:450px ; height:800px; float:left;background-color:#87B057 ;;text-align:left ; font-size:12px}
+.ads{width:100px ; height:800px; float:left ; background-color:#718018}
+.footer_left{width:150px ; height:150; float:left}
+.footer_right{width:550px ; height:190px; float:left;padding-top:60px; background-color:orange}
