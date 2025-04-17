@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>T4VN - FORM ĐĂNG KÝ THÔNG TIN</title>
+<script type="text/javascript">
+<!--CODE SẼ ĐƯỢC TRÌNH BÀY Ở PHẦN 2-->
+</script>
+</head>
+
+<body>
+<div class="body">
+<center><h1>ĐĂNG KÝ THÔNG TIN CÁ NHÂN</h1></center>
+<form name="xuly" action="" method="post">
+<table border="0" cellpadding="0" cellspacing="0">
+<tr class="table">
+    <td class="left"><p>Tài khoản </p></td>
+    <td class="right"><p><input type="text" name="taikhoan"></p></td>
+</tr>
+<tr class="table">
+    <td class="left"><p>Mật khẩu</p></td>
+    <td class="right"><p><input type="password" name="matkhau"></p></td>
+</tr>
+<tr class="table">
+    <td class="left"><p>Nhập lại mật khẩu</p></td>
+    <td class="right"><p><input type="password" name="lapmatkhau"></p></td>
+</tr>
+<tr class="table">
+    <td class="left"><p>Email</p></td>
+    <td class="right"><p><input type="text" name="email"></p></td>
+</tr>
+<tr class="table">
+    <td class="left"><p>Họ tên</p></td>
+    <td class="right"><p><input type="text" name="hoten"></p></td>
+</tr>
+<tr class="table">
+    <td class="left"><p>Giới tính</p></td>
+    <td class="right"><p><input type="radio" checked name="gioitinh"> nam <input type="radio" name="gioitinh"> nữ</p></td>
+</tr>
+<tr class="table">
+    <td class="left"><p>Quê quán</p></td>
+    <td class="right">
+           <p>
+        <select name="quequan">
+          <option value="CanTho">Cần Thơ</option>
+          <option value="DongThap">Đồng Tháp</option>
+          <option value="SocTrang">Sóc Trăng</option>
+        </select>
+        </p>
+    </td>
+</tr>
+<tr class="table">
+    <td class="left"><p>Sở thích</p></td>
+    <td class="right"><p><input type="checkbox" name="dienanh" checked> Điện ảnh <input type="checkbox" name="amnhac"> Âm nhạc <input type="checkbox" name="thethao"> Thể thao</p></td>
+</tr>
+<tr class="table">
+    <td class="left"><p>Ghi chú cá nhân</p></td>
+    <td class="right"><p><textarea style="height:100px;width:auto" name="ghichu"></textarea></p></td>
+</tr>
+<tr>
+<td colspan="2">
+  <center><input type="button" value="Lưu" name="luu"> <input type="reset" value="Nhập lại" name="nhaplai"></center>
+</td>
+</tr>
+</table>
+</form>
+</div>
+</body>
+</html>
