@@ -3,21 +3,25 @@
 <head>
 <meta charset="utf-8">
 <title>T4VN - FORM ĐĂNG KÝ THÔNG TIN</title>
-<link rel="stylesheet" type="text/css" href="formdangky.css">
+<link rel="stylesheet" type="text/css" href="formdangky2.css">
 </head>
 
 <body>
 <div class="body">
 
-<img src="images/Rose.gif">
+<img src="images/Bat.gif">
 <form name="xuly" action="" method="post">
 <table border="0" row= cellpadding="0" cellspacing="0">
     <tr>
-        <th colspan="2">Đăng ký thông tin cá nhân</th>
+        <th colspan="2">Đăng ký tài khoản cá nhân</th>
     </tr>
 <tr class="table">
-    <td class="left"><p>Tài khoản </p></td>
+    <td class="left"><p>Họ và tên </p></td>
     <td class="right"><p><input type="text" name="taikhoan"></p></td>
+</tr>
+<tr class="table">
+    <td class="left"><p>Tên tài khoản</p></td>
+    <td class="right"><p><input type="text" name="hoten"></p></td>
 </tr>
 <tr class="table">
     <td class="left"><p>Mật khẩu</p></td>
@@ -31,10 +35,7 @@
     <td class="left"><p>Email</p></td>
     <td class="right"><p><input type="text" name="email"></p></td>
 </tr>
-<tr class="table">
-    <td class="left"><p>Họ tên</p></td>
-    <td class="right"><p><input type="text" name="hoten"></p></td>
-</tr>
+
 <tr class="table">
     <td class="left"><p>Giới tính</p></td>
     <td class="right"><p><input type="radio" checked name="gioitinh"> nam <input type="radio" name="gioitinh"> nữ</p></td>
@@ -44,16 +45,16 @@
     <td class="right">
            <p>
         <select name="quequan">
-          <option value="CanTho">Cần Thơ</option>
-          <option value="DongThap">Đồng Tháp</option>
-          <option value="SocTrang">Sóc Trăng</option>
+          <option value="CanTho">Hà Nội</option>
+          <option value="DongThap">Hà Nam</option>
+          <option value="SocTrang">Hưng Yên</option>
         </select>
         </p>
     </td>
 </tr>
 <tr class="table">
     <td class="left"><p>Sở thích</p></td>
-    <td class="right"><p><input type="checkbox" name="dienanh" checked> Điện ảnh <input type="checkbox" name="amnhac"> Âm nhạc<br> <input type="checkbox" name="thethao"> Thể thao <input type="checkbox" name="chupanh"> Chụp ảnh</p></td> 
+    <td class="right"><p><input type="checkbox" name="dienanh" checked> Lập trình <input type="checkbox" name="amnhac"> Đi phượt<br> <input type="checkbox" name="thethao"> Xem phim <input type="checkbox" name="chupanh"> Nấu ăn</p></td> 
 </tr>
 <tr class="table">
     <td class="left"><p>Ghi chú cá nhân</p></td>
@@ -67,23 +68,26 @@
 </table>
 </form>
 </div>
+<div class=yeucau>
 <hr>
+
 <h3>Dựng kịch bản kiểm tra form khi người dùng nhấn [Lưu]</h3>
-<ol type="A">
-  <li>Tài khoản ít nhất 8 ký tự</li>
+<ol type="I">
+  <li>Họ tên không được rỗng</li>
+  <li>Tài khoản ít nhất 12 ký tự</li>
   <li>Mật khẩu yêu cầu :</li>
-       <ul tydiscpe="">
-          <li>Cần ít nhất 8 kí tự</li>
-          <li>Có chứa ký tự in hoa </li>
-          <li>Có chứa kí tự in thường</li>
+       <ul type="square">
+          <li>Cần ít nhất 10 kí tự</li>
+          <li>Có chứa ký tự in thường </li>
           <li>Có chứa số</li>
+          <li>Có chứa kí tự in hoa</li>
           <li>Có chứa ký tự đặc biệt</li>
        </ul>  
   <li>Nhập lại mật khẩu phải bằng mật khẩu</li>
   <li>Email phải đúng định dạng</li>
-  <li>Họ tên không được rỗng</li>
-</ol>
+ </ol>
 
 <p>Nếu không có lỗi in ra thông báo: <strong>dữ liệu hợp lệ</strong></p>
+</div>
 </body>
 </html>

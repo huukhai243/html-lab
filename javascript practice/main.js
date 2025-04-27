@@ -1,2 +1,2 @@
-var a=1*2;
-console.log (a)
+var languages=['javascript','Ruby','Dart']
+console.log(typeof languages)
