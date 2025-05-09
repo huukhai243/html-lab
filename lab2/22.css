@@ -1,0 +1,9 @@
+
+.header{
+    background-color:#FF3;
+    border-bottom:2px solid #F90;
+    text-align:center;
+}
+.cha {
+    display: flex;
+}
