@@ -1,11 +1,11 @@
-var courses = [
-    { id: 1, name: 'Javascript', coin: 0 },
-    { id: 2, name: 'HTML, CSS', coin: 0 },
-    { id: 3, name: 'ReactJS', coin: 100 }
-];
+var i=0;
+var isSuccess = false;
 
-var courseNames = courses.map(function(course) {
-    return course.name;
-});
+do{
+    i++;
+    console.log('Nạp thẻ lần '+i);
 
-console.log(courseNames);
+    if(false){
+        isSuccess = true;
+    }
+}while(!isSuccess && i<=3);
